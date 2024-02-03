@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/queries.css" />
+    <script defer src="app.js" type="module"></script>
   </head>
   <body>
     <header class="header">
@@ -29,13 +30,15 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#how" class="main-nav-link">How it works</a></li>
-          <li><a href="#meals" class="main-nav-link">Meals</a></li>
+          <li><a href="#section--1" class="main-nav-link">How it works</a></li>
+          <li><a href="#section--2" class="main-nav-link">Meals</a></li>
           <li>
-            <a href="#testimonials" class="main-nav-link">Testimonials</a>
+            <a href="#section--3" class="main-nav-link">Testimonials</a>
           </li>
-          <li><a href="#pricing " class="main-nav-link">Pricing</a></li>
-          <li><a href="#cta" class="main-nav-link nav-cta">Try for free</a></li>
+          <li><a href="#section--4 " class="main-nav-link">Pricing</a></li>
+          <li>
+            <a href="#section--5" class="main-nav-link nav-cta">Try for free</a>
+          </li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -112,7 +115,7 @@
         </div>
       </section>
 
-      <section class="section-how" id="how">
+      <section class="section-how" id="section--1">
         <div class="container">
           <span class="sub-heading">How it works</span>
           <h2 class="heading-secondary">
@@ -146,7 +149,7 @@
             </div>
           </div>
           <!-- second step -->
-          <div class="container grid grid--2--cols grid-center-v">
+          <div class="container grid grid--2--cols grid-center-v step">
             <div class="step-img-box">
               <img
                 class="step-img"
@@ -169,7 +172,7 @@
             </div>
           </div>
           <!-- Third step -->
-          <div class="container grid grid--2--cols grid-center-v">
+          <div class="container grid grid--2--cols grid-center-v step">
             <div class="step-text-box">
               <p class="step-number">03</p>
               <h3 class="heading-tertiary">
@@ -194,7 +197,7 @@
           </div>
         </div>
       </section>
-      <section class="section-meals" id="meals">
+      <section class="section section-meals" id="section--2">
         <div class="container center-text">
           <span class="sub-heading">Meals</span>
           <h2 class="heading-secondary">Omni food AI chose 5,000+ recipes</h2>
@@ -303,7 +306,7 @@
           <a href="#" class="link">See all recipes &rarr;</a>
         </div>
       </section>
-      <section class="section-testimonials" id="testimonials">
+      <section class="section-testimonials" id="section--3">
         <div class="testimonials-container">
           <span class="sub-heading">Testimonials</span>
           <h2 class="heading-secondary">Once your try it, you can't go back</h2>
@@ -439,7 +442,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-pricing" id="pricing">
+      <section class="section section-pricing" id="section--4">
         <div class="container">
           <span class="sub-heading">Pricing</span>
           <h2 class="heading-secondary">
@@ -515,45 +518,43 @@
         <div class="container grid grid--4--cols">
           <div class="feature">
             <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
-            <p class="feature-title">Nie wieder kochen</p>
+            <p class="feature-title">Never cook again</p>
             <p class="feature-text">
-              Unser Abonnement deckt 365 Tage im Jahr ab, auch an wichtigen
-              Feiertagen
+              Our subscription covers 365 days a year, including important ones
+              Holidays
             </p>
           </div>
           <div class="feature">
             <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
-            <p class="feature-title">Nie wieder kochen</p>
+            <p class="feature-title">Local and organic</p>
             <p class="feature-text">
-              Unser Abonnement deckt 365 Tage im Jahr ab, auch an wichtigen
-              Feiertagen
+              Our cooks only use local, fresh, and organic products to prepare
+              your meals.
             </p>
           </div>
           <div class="feature">
             <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
-            <p class="feature-title">Kein Abfall</p>
+            <p class="feature-title">No waste</p>
             <p class="feature-text">
-              Alle unsere Partner verwenden ausschließlich Mehrwegbehälter, um
-              alle Ihre Mahlzeiten zu verpacken
+              All our partners only use reusable containers to package all your
+              meals.
             </p>
           </div>
           <div class="feature">
             <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
-            <p class="feature-title">Jederzeit pausieren</p>
+            <p class="feature-title">Pause anytime</p>
             <p class="feature-text">
-              In den Urlaub fahren? Pausieren Sie einfach Ihr Abonnement und wir
-              erstatten Ihnen die nicht genutzten Tage zu
+              Going on vacation? Just pause your subscription, and we refund
+              unused days.
             </p>
           </div>
         </div>
       </section>
-      <section class="section-cta" id="cta">
+      <section class="section section-cta" id="section--5">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
-              <h2 class="heading-secondary">
-                Wir bieten ein kostenloses Probeessen an!
-              </h2>
+              <h2 class="heading-secondary">Get your first meal for free!</h2>
               <p class="cta-text">
                 Health, tasty and Lorem ipsum dolor, sit amet consectetur
                 adipisicing elit. Sunt, fuga?
@@ -688,6 +689,5 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="app.js"></script>
   </body>
 </html>

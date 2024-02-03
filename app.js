@@ -1,3 +1,5 @@
+import { ob } from "./intersectionObserver.js";
+
 ///////////////////////////////////////////////////////////
 // // Set current year
 // const yearEl = document.querySelector(".year");
@@ -44,3 +46,43 @@ const obs = new IntersectionObserver(
 );
 obs.observe(sectionHeroEl);
 /////////////////////////////////////////
+
+// The Reveal effect
+// the order mater
+const allSections = document.querySelectorAll(".section");
+const allSteps = document.querySelectorAll(".step");
+const oneElement = document.querySelector(".testimonials-container");
+const allNodes = [allSections, allSteps, oneElement];
+const optionsList = [
+  {
+    root: null,
+    threshold: 0.15,
+  },
+  {
+    root: null,
+    threshold: 0.2,
+  },
+  {
+    root: null,
+    threshold: 0.2,
+  },
+];
+ob(allNodes, "element--hidden", optionsList);
+
+// Implement smooth scrolling
+
+// 1- commen parents
+// 2- child element that will orginate the effect
+
+const delegationClick = (parent, children) => {
+  document.querySelector(parent).addEventListener("click", (e) => {
+    e.preventDefault();
+    const id = e.target.getAttribute("href");
+    // Matching
+    if (e.target.classList.contains(children)) {
+      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    }
+  });
+};
+
+delegationClick(".main-nav", "main-nav-link");

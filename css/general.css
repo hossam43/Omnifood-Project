@@ -40,7 +40,7 @@ Paragraph default: 1.6
 #767676 (lightest grey allowed on #fff)
 #6f6f6f (lightest grey allowed on #fdf2e9)
 #555
-#333
+#333#
 
 --- 05 SHADOWS
 
@@ -282,6 +282,21 @@ when grid is the last child in the section
   width: 2.4rem;
   height: 2.4rem;
   color: #e67e22;
+}
+
+/* Add the reveling section */
+.section,
+.step {
+  transition: transform 0.7s ease-in, opacity 0.7s ease-in;
+}
+
+.testimonials-container {
+  transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+.element--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 /* HELPER/SETTINGS CLASSES */
